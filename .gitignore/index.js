@@ -9,7 +9,7 @@ const db = low(adapter);
 var prefix = "/";
 var bot = new Discord.Client();
 
-client.login("NDM3NzI5NzQzNjU2MTg5OTU0.Db95-A.KkivJaPY-9Xk94JL_sXvTdRImQs");
+client.login(process.env.TOKEN);
 
 bot.on("guildMemberAdd", member => {
     let role = member.guild.roles.find("name", "Novice");
